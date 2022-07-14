@@ -23,5 +23,15 @@ module.exports = {
 		'react/react-in-jsx-scope': 'off',
 		indent: ['error', 'tab'],
 		'prettier/prettier': [2, { useTabs: true }],
+		'no-var': 'error',
+		'@typescript-eslint/no-unused-vars': ['error'],
+		// 'no-useless-path-segments': ['error'],
+		'no-dupe-keys': ['error'],
+		'no-use-before-define': ['error'],
+	},
+	settings: {
+		react: {
+			version: 'detect',
+		},
 	},
 };

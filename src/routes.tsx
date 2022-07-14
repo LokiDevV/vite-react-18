@@ -4,16 +4,16 @@ import Posts from './pages/posts';
 import Post from './pages/posts/post';
 
 const Routing = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="teams" element={<Posts />}>
-          <Route path=":postId" element={<Post />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="teams" element={<Posts />}>
+					<Route path=":postId" element={<Post />} />
+				</Route>
+			</Routes>
+		</BrowserRouter>
+	);
 };
 
 export default Routing;
